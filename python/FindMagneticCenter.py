@@ -5,7 +5,7 @@ import math
 import matplotlib.pyplot as plt
 
 
-def FindMaxAndMins (ZBy):
+def FindUndulatorCenter(ZBy):
   "find the max and mins in the By distribution"
 
   AllMaximum  = []
@@ -141,6 +141,5 @@ if __name__ == "__main__":
 
   ZBy = ReadKymaFileFormat(sys.argv[1])
 
-  Center = FindMaxAndMins(ZBy)
+  Center = FindUndulatorCenter(ZBy)
   print 'Center:', Center
-  exit(0)
